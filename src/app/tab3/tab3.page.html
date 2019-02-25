@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Conversion de Volumenes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      Convertido
+    </ion-card-header>
+
+    <ion-card-content>
+      <h2>{{convertido}}</h2>
+    </ion-card-content>
+
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Ingresa el volumen a convertir</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Cantidad:</ion-label>
+          <ion-input [(ngModel)]="cantIngresada" (ionChange)="convertir()" type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Selecciona los Volumenes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Convertir de</ion-label>
+          <ion-select [(ngModel)]="unidToConvert" (ionChange)="convertir()" okText="Ok" cancelText="Cerrar">
+            <ion-select-option value="1">Galon</ion-select-option>
+            <ion-select-option value="2">Cuarto</ion-select-option>
+            <ion-select-option value="3">Litro</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>A</ion-label>
+          <ion-select [(ngModel)]="unidToDoConvert" (ionChange)="convertir()" okText="Ok" cancelText="Cerrar">
+            <ion-select-option value="1">Galon</ion-select-option>
+            <ion-select-option value="2">Cuarto</ion-select-option>
+            <ion-select-option value="3">Litro</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-list lines="none">
+      <h1>Laisha Vanessa Contreras Rodriguez</h1>
+      <h1>Profesor Favio Rey Madrigal</h1>
+      <h1>Fisica Para informatica</h1>
+    </ion-list>
+  </ion-card>
+</ion-content>
