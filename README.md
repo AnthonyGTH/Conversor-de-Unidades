@@ -1,2 +1,2 @@
 # Conversor-de-Unidades
-Aplicación creada en ionic con el objetivo de ser un conversor de unidades básicas.
+Application created in ionic 3 with the objective of being a basic unit converter.
